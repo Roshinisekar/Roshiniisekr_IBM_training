@@ -1,0 +1,18 @@
+package IOStreams;
+import java.io.FileInputStream;
+public class fileInput {
+	public static void main(String args[]) {
+	
+	try {
+		FileInputStream fin=new FileInputStream("E:\\testout.txt");
+				int i=fin.read();
+				System.out.println((char)i);
+				
+				fin.close();
+	}
+	catch(Exception e) {
+		System.out.println(e);
+	}
+
+}
+}
